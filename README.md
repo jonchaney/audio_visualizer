@@ -1,6 +1,6 @@
 ## Audio Visualizer
 
-For this project I will create an audio visualizer using Javascript, CSS, and the HTML Canvas element. 
+For this project I will create an audio visualizer using Javascript, CSS, the HTML Canvas element, and the Web Audio API.
 
 ## Funtionality and MVP
 
