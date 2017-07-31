@@ -16,7 +16,7 @@ In addition, this project will include:
 
 ## Wireframes
 
-The app will consist of a single page, with four canvas elements, each showing different audio visualizations from the same audio source. You will be able to click on one for the song to start playing and the visualization to begin. Once you click on another the previous one will stop and the next one will play. There will also be a button to play all simultanously. 
+The app will consist of a single page, with four canvas elements, each showing different audio visualizations from the same audio source. You will be able to click on one for the song to start playing and the visualization to begin. Once you click on another the previous one will stop and the next one will play. There will also be a button to play all simultanously. THe audio source will be a recording of a song I wrote for my band Yawn.
 
 There will be an About link, when clicking, a modal will appear with a brief explanation of the type of visualizations. There will also be a link to the github and my linkedIn.
 
@@ -39,7 +39,7 @@ The following scripts will be involved in this project:
 
 `main.js`: this is where I will write the JS and DOM manipulation to put the logic into the canvas element. 
 
-## Implementation Timeline
+## Implementation Time
 
 **Day 1**: Get webpack, package.json running and create an entry file.
 
