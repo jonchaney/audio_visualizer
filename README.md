@@ -41,7 +41,7 @@ The following scripts will be involved in this project:
 
 ## Implementation Time
 
-**Day 1**: Get webpack, package.json running and create an entry file.
+**Day 1**: set up file structure and test to make sure entry file is working.
 
 - Go over the Web Audio API and set up my audio.js file so I can create and Audio Object with a sound file saved as a instance variable.
 - Test that I can do some basic extraction of the audio data to render something to the page.
