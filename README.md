@@ -1,13 +1,15 @@
 ## Audio Visualizer
 
-For this project I will create an audio visualizer using Javascript, CSS, the HTML Canvas element, and the Web Audio API.
+For this project I will create an audio visualizer using Javascript, CSS, the HTML Canvas element, and the Web Audio API. The audio visualizer will be separted into three different parts of the same song.
 
 ## Funtionality and MVP
 
 With my audio visualizer, users will be able to:
 
-- Press play to start the visualization.
-- View up to four different visualizations of the same audio source. One being the classic sound bar animation.
+- Press play to start the visualizations.
+- Basic sound bar visualization
+- Pulse visualization
+- Waveform visualization
 
 In addition, this project will include:
 
@@ -16,7 +18,7 @@ In addition, this project will include:
 
 ## Wireframes
 
-The app will consist of a single page, with four canvas elements, each showing different audio visualizations from the same audio source. You will be able to click on one for the song to start playing and the visualization to begin. Once you click on another the previous one will stop and the next one will play. There will also be a button to play all simultanously. THe audio source will be a recording of a song I wrote for my band Yawn.
+The app will consist of a single page, with four canvas elements, each showing different audio visualizations from the same audio source. You will be able to click on one for the song to start playing and the visualization to begin. Once you click on another the previous one will stop and the next one will play. There will also be a button to play all simultanously. 
 
 There will be an About link, when clicking, a modal will appear with a brief explanation of the type of visualizations. There will also be a link to the github and my linkedIn.
 

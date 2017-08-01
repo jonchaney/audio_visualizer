@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="./src/js/entry.js"></script>
+  <script src="./src/js/main.js"></script>
   <link rel="stylesheet" src="./src/scss/reset.scss">
   <link rel="stylesheet" src="./src/scss/entry.scss">
   <title>Audio Visualizer</title>
 </head>
 <body>
   <h1>Audio Visualizer</h1>
-  <main id="root"></main>
+  <div id="content">
+    <input type="file" id="thefile" accept="audio/*" />
+    <canvas id="canvas"></canvas>
+    <audio id="audio" controls></audio>
+  </div>
 </body>
 </html>
