@@ -5,7 +5,8 @@ module.exports = {
   context: __dirname,
   entry: './lib/js/entry.js',
   output: {
-    filename: './lib/bundle.js'
+    path: path.resolve(__dirname, 'lib'),
+    filename: './bundle.js'
   },
   resolve: {
     extensions: ['.js', '*']
@@ -22,8 +23,5 @@ module.exports = {
       }
     ]
   },
-  devtool: 'source-maps',
-  "plugins": [
-    "syntax-dynamic-import"
-  ]
+  devtool: 'source-maps'
 };

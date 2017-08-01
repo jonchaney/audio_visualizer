@@ -2,32 +2,58 @@
 <html>
 
 <head>
-  <header name="Access-Control-Allow-Origin" value="*" />
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./assets/scss/entry.scss">
-  <script src="./lib/js/entry.js"></script>
+   <link rel="stylesheet" type="text/css" href="./assets/scss/entry.scss"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="./lib/bundle.js"></script>
   <title>Audio Visualizer</title>
 </head>
 
 <body>
-  <div id="content">
-    <div class="sound-bar">
-      <canvas id="bar-canvas" width="100" height="100"></canvas>
-      <audio id="bar-audio" controls></audio>
-    </div>
+  <script>
+    // plays all sounds at the same time
+    function play(soundObj) {
+      let sound = document.getElementById(soundObj);
+      
+      sound.play();
+    }
 
-    <div class="sound-pulse">
-      <canvas id="canvas" width="100" height="100"></canvas>
-      <audio id="audio" controls></audio>
-    </div>
+    function pause(soundObj) {
+      var sound = document.getElementById(soundObj);
+      sound.pause();
+    }
+</script>
 
-    </div class="waveform">
-      <canvas id="canvas" width="100" height="100"></canvas>
-      <audio id="audio" controls></audio>
-    <div>
+<h1>Audio Visualizer</h1>
+
+  <div class="buttons">
+    <input type="button" 
+          value="play"
+          onClick="play('bar-audio'),play('wave-audio'),play('pulse-audio')">
+    <input type="button" 
+          value="pause"
+          onClick="pause('bar-audio'),pause('wave-audio'),pause('pulse-audio')">
   </div>
+  <div class="sounds">
+
+     <div class="sound-bar"> 
+      <canvas id="bar-canvas"></canvas>
+      <audio id="bar-audio" type="audio/mp3" controls></audio>
+     </div> 
+
+    <div class="waveform">
+      <canvas id="wave-canvas"></canvas>
+      <audio id="wave-audio" controls></audio>
+      
+  <div class="sound-pulse">
+    <canvas id="pulse-canvas"></canvas>
+    <audio id="pulse-audio" controls></audio>
+  </div>
+  </div>
+
+
 </body>
 
 </html>
