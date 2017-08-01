@@ -1,21 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="./src/js/entry.js"></script>
-  <script src="./src/js/main.js"></script>
-  <link rel="stylesheet" src="./src/scss/reset.scss">
-  <link rel="stylesheet" src="./src/scss/entry.scss">
+  <header name="Access-Control-Allow-Origin" value="*" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./assets/scss/entry.scss">
+  <script src="./lib/js/entry.js"></script>
   <title>Audio Visualizer</title>
 </head>
+
 <body>
-  <h1>Audio Visualizer</h1>
   <div id="content">
-    <input type="file" id="thefile" accept="audio/*" />
-    <canvas id="canvas"></canvas>
-    <audio id="audio" controls></audio>
+    <div class="sound-bar">
+      <canvas id="bar-canvas" width="100" height="100"></canvas>
+      <audio id="bar-audio" controls></audio>
+    </div>
+
+    <div class="sound-pulse">
+      <canvas id="canvas" width="100" height="100"></canvas>
+      <audio id="audio" controls></audio>
+    </div>
+
+    </div class="waveform">
+      <canvas id="canvas" width="100" height="100"></canvas>
+      <audio id="audio" controls></audio>
+    <div>
   </div>
 </body>
+
 </html>
