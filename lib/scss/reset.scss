@@ -21,9 +21,7 @@ time,
 form,
 label,
 fieldset,
-button,
-textarea,
-input
+textarea
 {
   margin: 0;
   padding: 0;
@@ -52,8 +50,8 @@ input[type="password"],
 input[type="email"],
 input[type="text"],
 input[type="submit"],
-textarea,
-button {
+textarea
+ {
   /*
   Get rid of native styling. Read more here:
   http://css-tricks.com/almanac/properties/a/appearance/

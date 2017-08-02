@@ -1,0 +1,67 @@
+@import 'reset.scss';
+body {
+    background-color: papayawhip;
+}
+  
+canvas {
+  // display: flex;
+  flex-direction: row;
+  // flex-flow: wrap;
+  width: 400px;
+  height: 200px;
+  // border: 1px solid;
+  border-radius: 50px;
+  background-color: transparent; 
+}
+
+ul.nav {
+  list-style: none;
+  display: flex;
+  margin: 0 0 4px -46px;
+  font-family: 'Roboto';
+}
+
+.nav > li {
+  padding: 0 0 5px 9px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.sounds {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.waveform, .sound-pulse, .sound-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+audio {
+  background-color: white;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
+  color: #ffefd5;
+}
+
+input {
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
+}
+
+.buttons {
+  margin: 120px 0 0 34px;
+}
+
+@import 'info.scss';
