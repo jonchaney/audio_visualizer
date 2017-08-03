@@ -25,10 +25,11 @@
     }
     function pause(soundObj) {
       let sound = document.getElementById(soundObj);
-      sound.stop();
-      cancelAnimationFrame(window.drawPulse);
-      cancelAnimationFrame(window.drawWave);
-      cancelAnimationFrame(window.drawBar);
+      sound.pause();
+      sound.currentTime = 0;
+      window.cancelAnimationFrame(window.drawPulse);
+      window.cancelAnimationFrame(window.drawWave);
+      window.cancelAnimationFrame(window.drawBar);
     }
 </script>
     <div class="main">
@@ -41,7 +42,7 @@
             <li>the second visualization is the guitar</li>
             <li>the third visualization is a combination of the other two tracks with reverb and echo effects</li>
             <li></li>
-            <li>--- song written by me ---</li>
+            <li>--- song: 'shining bright' written by me ---</li>
           </ol>
           <div>
             <a href="https://github.com/jonchaney/audio_visualizer#audio-visualizer">github</a>
@@ -62,19 +63,23 @@
 
   <div class="sounds">
 
-    <div class="sound-pulse">
-      <canvas id="pulse-canvas"></canvas>
-      <audio id="pulse-audio" type="audio/mp3"></audio>
-    </div>
-
      <div class="sound-bar"> 
       <canvas id="bar-canvas"></canvas>
-      <audio id="bar-audio" type="audio/mp3"></audio>
+      <audio id="bar-audio" type="audio/mp3" controls></audio>
+      <input type="button" value="mute" onClick="">
     </div> 
+
+    <div class="sound-pulse">
+      <canvas id="pulse-canvas"></canvas>
+      <audio id="pulse-audio" type="audio/mp3" controls></audio>
+      <input type="button" value="mute" onClick="">
+    </div>
+
 
     <div class="waveform">
       <canvas id="wave-canvas"></canvas>
-      <audio id="wave-audio" type="audio/mp3"></audio>
+      <audio id="wave-audio" type="audio/mp3" controls></audio>
+      <input type="button" value="mute" onClick="">
     </div>
   </div>
 
