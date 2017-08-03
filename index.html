@@ -23,6 +23,7 @@
           console.log(playPromise);
         });
     }
+    // stops all sounds
     function pause(soundObj) {
       let sound = document.getElementById(soundObj);
       sound.pause();
@@ -30,6 +31,15 @@
       window.cancelAnimationFrame(window.drawPulse);
       window.cancelAnimationFrame(window.drawWave);
       window.cancelAnimationFrame(window.drawBar);
+    }
+    // mutes a track
+    function mute(soundObj) {
+      let sound = document.getElementById(soundObj);
+      if (sound.muted) {
+        sound.muted = false;
+      } else {
+        sound.muted = true;
+      }
     }
 </script>
     <div class="main">
@@ -65,22 +75,22 @@
 
      <div class="sound-bar"> 
       <canvas id="bar-canvas"></canvas>
-      <audio id="bar-audio" type="audio/mp3" controls></audio>
-      <input type="button" value="mute" onClick="">
+      <audio id="bar-audio" type="audio/mp3"></audio>
     </div> 
+      <input type="button" value="toggle mute" onClick="mute('bar-audio')">
 
     <div class="sound-pulse">
       <canvas id="pulse-canvas"></canvas>
-      <audio id="pulse-audio" type="audio/mp3" controls></audio>
-      <input type="button" value="mute" onClick="">
+      <audio id="pulse-audio" type="audio/mp3"></audio>
     </div>
+      <input type="button" value="toggle mute" onClick="mute('pulse-audio')">
 
 
     <div class="waveform">
       <canvas id="wave-canvas"></canvas>
-      <audio id="wave-audio" type="audio/mp3" controls></audio>
-      <input type="button" value="mute" onClick="">
+      <audio id="wave-audio" type="audio/mp3"></audio>
     </div>
+      <input type="button" value="toggle mute" onClick="mute('wave-audio')">
   </div>
 
 </body>
