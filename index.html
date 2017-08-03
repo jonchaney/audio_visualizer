@@ -41,7 +41,8 @@
         sound.muted = true;
       }
     }
-  </script>
+</script>
+    <main>
       <div class="main">
         <section class="info">
           <h1><a href="index.html">Audio Visualizer</a></h1>
@@ -60,7 +61,7 @@
             </article>
         </section> 
 
-      <div class="buttons">
+      <section class="buttons">
         <input id="play-button" 
               type="button" 
               value="play"
@@ -68,30 +69,32 @@
         <input type="button" 
               value="stop"
               onClick="pause('bar-audio'),pause('wave-audio'),pause('pulse-audio')">
-      </div>
+      </section>
+    </main>
   </div>
 
     <div class="sounds">
 
-      <div class="sound-bar"> 
-        <canvas id="bar-canvas"></canvas>
-        <audio id="bar-audio" type="audio/mp3"></audio>
-        <input type="button" value="toggle mute" onClick="mute('bar-audio')">
-      </div> 
+      <ul class="sound-bar"> 
+        <li><canvas id="bar-canvas"></canvas></li>
+        <li><audio id="bar-audio" type="audio/mp3"></audio></li>
+        <li><input type="button" value="toggle mute" onClick="mute('bar-audio')"></li>
+      </ul> 
 
-      <div class="sound-pulse">
-        <canvas id="pulse-canvas"></canvas>
-        <audio id="pulse-audio" type="audio/mp3"></audio>
-        <input type="button" value="toggle mute" onClick="mute('pulse-audio')">
-      </div>
+      <ul class="sound-pulse">
+        <li><canvas id="pulse-canvas"></canvas></li>
+        <li><audio id="pulse-audio" type="audio/mp3"></audio></li>
+      <li><input type="button" value="toggle mute" onClick="mute('pulse-audio')"></li>
+      </ul>
   
 
-      <div class="waveform">
-        <canvas id="wave-canvas"></canvas>
-        <audio id="wave-audio" type="audio/mp3"></audio>
-        <input type="button" value="toggle mute" onClick="mute('wave-audio')"> 
-      </div>
+      <ul class="waveform">
+        <li><canvas id="wave-canvas"></canvas></li>
+        <li><audio id="wave-audio" type="audio/mp3"></audio></li>
+        <li><input type="button" value="toggle mute" onClick="mute('wave-audio')"></li>
+      </ul>
 
     </div>
+
   </body>
 </html>

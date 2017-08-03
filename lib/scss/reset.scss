@@ -72,3 +72,10 @@ input[type="submit"] {
   display: block;
   clear: both;
 }
+
+input {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

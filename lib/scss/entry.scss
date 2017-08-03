@@ -4,12 +4,9 @@ body {
 }
   
 canvas {
-  // display: flex;
-  flex-direction: row;
-  // flex-flow: wrap;
+  display: flex;
   width: 400px;
   height: 200px;
-  // border: 1px solid;
   border-radius: 50px;
   background-color: transparent; 
 }
@@ -31,20 +28,6 @@ ul.nav {
   float: left;
 }
 
-.sounds {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.waveform, .sound-pulse, .sound-bar {
-  display: flex;
-  flex-direction: column;
-}
-
 audio {
   background-color: white;
 }
@@ -61,7 +44,46 @@ input {
 }
 
 .buttons {
-  margin: 120px 0 0 34px;
+  position: fixed;
+  left: 263px;
+  top: 30px;
+  text-align: center;
+
+    input {
+      background: none;
+      border: .75px solid;
+      font-size: 14px;
+      color: #ffefd5;
+      border-radius: 55px;
+      border-color: papayawhip;
+    }
 }
+
+.sounds {
+  display: flex;
+  justify-content: center;
+  margin: 243px 0 0 0;
+
+  ul {
+    width: 400px;
+    // border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    
+    li {
+      display: flex;
+      justify-content: center;
+      input {
+        border: .75px solid;
+        font-size: 14px;
+        border-color: #3b7bb4;
+        border-radius: 55px;
+        background-color: papayawhip;
+        color: #3b7bb4;
+      }
+    }
+  }
+}
+
 
 @import 'info.scss';

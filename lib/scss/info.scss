@@ -40,53 +40,58 @@
   cursor: default;
 }
 
-.info {
-  @include overlay;
-  left: 15px;
-  top: 15px;
-  background-color: #3b7bb4;
-  // opacity: 0.8;
-  border-radius: 24px;
+.main {
+  display: flex;
 
-  h1 {
-    font-family: 'Roboto';
-    font-size: 30px;
 
-    a {
-      color: #ffefd5;
-    }
-  }
+  .info {
+    @include overlay;
+    left: 15px;
+    top: 15px;
+    background-color: #3b7bb4;
+    width: 321px;
+    border-radius: 24px;
 
-  article {
-    margin-top: 10px;
-    display: none;
-    font-family: 'Roboto';
-    a {
-      color: #ffefd5;
+    h1 {
       font-family: 'Roboto';
-    }
-    div {
-        margin: 20px 0 0 0;
-    }
-    ol {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      margin: 0 0 0 -41px;
-    }
+      font-size: 30px;
 
-    ol > li {
-    padding: 0 14px 0 0;
-    font-size: 14px;
-    color: #ffefd5;
+      a {
+        color: #ffefd5;
+      }
     }
-  }
-
-  &:hover {
-    width: 320px;
 
     article {
-      display: block;
+      margin-top: 10px;
+      display: none;
+      font-family: 'Roboto';
+      a {
+        color: #ffefd5;
+        font-family: 'Roboto';
+      }
+      div {
+          margin: 20px 0 0 0;
+      }
+      ol {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 -41px;
+      }
+
+      ol > li {
+      padding: 0 14px 0 0;
+      font-size: 14px;
+      color: #ffefd5;
+      }
+    }
+
+    &:hover {
+      width: 320px;
+
+      article {
+        display: block;
+      }
     }
   }
 }
