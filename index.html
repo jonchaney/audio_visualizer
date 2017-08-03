@@ -16,7 +16,7 @@
     // plays all sounds at the same time
     function play(soundObj) {
       let sound = document.getElementById(soundObj);
-      let playPromise = sound.play();
+      // let playPromise = sound.play();
 
       sound.addEventListener('loadeddata', function () {
           playPromise = sound.play();
@@ -41,24 +41,24 @@
         sound.muted = true;
       }
     }
-</script>
-    <div class="main">
-      <section class="info">
-        <h1><a href="index.html">Audio Visualizer</a></h1>
-        <article>
-          <ol>
-            <li>press play to visualize three different tracks from the same song</li>
-            <li>the first visualization is the vocals</li>
-            <li>the second visualization is the guitar</li>
-            <li>the third visualization is a combination of the other two tracks with reverb and echo effects</li>
-            <li></li>
-            <li>--- song: 'shining bright' written by me ---</li>
-          </ol>
-          <div>
-            <a href="https://github.com/jonchaney/audio_visualizer#audio-visualizer">github</a>
-          </div>
-        </article>
-      </section> 
+  </script>
+      <div class="main">
+        <section class="info">
+          <h1><a href="index.html">Audio Visualizer</a></h1>
+            <article>
+              <ol>
+                <li>press play to visualize three different tracks from the same song</li>
+                <li>the first visualization is the guitar</li>
+                <li>the second visualization is the vocals</li>
+                <li>the third visualization is a combination of the other two tracks with reverb and echo effects</li>
+                <li></li>
+                <li>--- song: 'shining bright' written by me ---</li>
+              </ol>
+              <div>
+                <a href="https://github.com/jonchaney/audio_visualizer#audio-visualizer">github</a>
+              </div>
+            </article>
+        </section> 
 
       <div class="buttons">
         <input id="play-button" 
@@ -71,28 +71,27 @@
       </div>
   </div>
 
-  <div class="sounds">
+    <div class="sounds">
 
-     <div class="sound-bar"> 
-      <canvas id="bar-canvas"></canvas>
-      <audio id="bar-audio" type="audio/mp3"></audio>
-    </div> 
-      <input type="button" value="toggle mute" onClick="mute('bar-audio')">
+      <div class="sound-bar"> 
+        <canvas id="bar-canvas"></canvas>
+        <audio id="bar-audio" type="audio/mp3"></audio>
+        <input type="button" value="toggle mute" onClick="mute('bar-audio')">
+      </div> 
 
-    <div class="sound-pulse">
-      <canvas id="pulse-canvas"></canvas>
-      <audio id="pulse-audio" type="audio/mp3"></audio>
+      <div class="sound-pulse">
+        <canvas id="pulse-canvas"></canvas>
+        <audio id="pulse-audio" type="audio/mp3"></audio>
+        <input type="button" value="toggle mute" onClick="mute('pulse-audio')">
+      </div>
+  
+
+      <div class="waveform">
+        <canvas id="wave-canvas"></canvas>
+        <audio id="wave-audio" type="audio/mp3"></audio>
+        <input type="button" value="toggle mute" onClick="mute('wave-audio')"> 
+      </div>
+
     </div>
-      <input type="button" value="toggle mute" onClick="mute('pulse-audio')">
-
-
-    <div class="waveform">
-      <canvas id="wave-canvas"></canvas>
-      <audio id="wave-audio" type="audio/mp3"></audio>
-    </div>
-      <input type="button" value="toggle mute" onClick="mute('wave-audio')">
-  </div>
-
-</body>
-
+  </body>
 </html>
