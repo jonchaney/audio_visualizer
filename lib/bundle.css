@@ -136,7 +136,8 @@ input {
         border-color: #3b7bb4;
         border-radius: 55px;
         background-color: papayawhip;
-        color: #3b7bb4; }
+        color: #3b7bb4;
+        margin-top: 15px; }
 
 /* Dropdown Button */
 .dropbtn {
