@@ -13,14 +13,11 @@ With my audio visualizer, users will be able to:
 
 In addition, this project will include:
 
-- Minimalist web design patterns, to provide a sleek, non-distracting interface
 - A production Readme
 
 ## Wireframes
 
-The app will consist of a single page, with four canvas elements, each showing different audio visualizations from the same audio source. You will be able to click on one for the song to start playing and the visualization to begin. Once you click on another the previous one will stop and the next one will play. There will also be a button to play all simultanously. 
-
-There will be an About link, when clicking, a modal will appear with a brief explanation of the type of visualizations. There will also be a link to the github and my linkedIn.
+There will be a drop down menu describing the page and a link to the github.
 
 
 ![wireframes](docs/wireframes/js_project.jpg)
@@ -30,7 +27,6 @@ There will be an About link, when clicking, a modal will appear with a brief exp
 For this project I plan to use:
 
 - Vanilla Javascript
-- DOM Manipulation
 - Canvas HTML element
 - Web Audio API for extracting the data from the Audio file.
 - Webpack to bundle and set up the files
@@ -39,7 +35,11 @@ The following scripts will be involved in this project:
 
 `audio.js`: this is where the data for the audio will be stored. I will create methods and allow manipulation of the audio stream.
 
-`main.js`: this is where I will write the JS and DOM manipulation to put the logic into the canvas element. 
+`pulse.js`: this is where a pulse type animation will be rendered
+
+`soundBar.js`: this is where the classic sound bar animation will be rendered
+
+`waveform.js`: this is where a wavefirm animation will be rendered
 
 ## Implementation Time
 
