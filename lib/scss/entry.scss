@@ -24,11 +24,6 @@ ul.nav {
 
 .nav > li {
   padding: 0 0 5px 9px;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
 }
 
 .info {
@@ -45,11 +40,6 @@ h1 {
   font-family: Roboto, sans-serif;
   font-weight: 200;
   color: #ffefd5;
-  text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
 }
 
 input {
@@ -85,7 +75,6 @@ input:hover {
 
   ul {
     width: 400px;
-    // border: 1px solid;
     display: flex;
     flex-direction: column;
     
