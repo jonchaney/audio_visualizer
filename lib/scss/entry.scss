@@ -2,6 +2,10 @@
 body {
     background-color: papayawhip;
 }
+
+a:hover {
+  text-decoration: underline;
+}
   
 canvas {
   display: flex;
@@ -41,6 +45,11 @@ h1 {
 input {
   font-family: Roboto, sans-serif;
   font-weight: 200;
+  cursor: pointer;
+}
+
+input:hover {
+  box-shadow: 10px;
 }
 
 .buttons {

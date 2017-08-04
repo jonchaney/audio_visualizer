@@ -73,6 +73,9 @@ input {
 body {
   background-color: papayawhip; }
 
+a:hover {
+  text-decoration: underline; }
+
 canvas {
   display: flex;
   width: 400px;
@@ -104,7 +107,11 @@ h1 {
 
 input {
   font-family: Roboto, sans-serif;
-  font-weight: 200; }
+  font-weight: 200;
+  cursor: pointer; }
+
+input:hover {
+  box-shadow: 10px; }
 
 .buttons {
   position: fixed;
@@ -139,32 +146,6 @@ input {
         color: #3b7bb4;
         margin-top: 15px; }
 
-/* Dropdown Button */
-.dropbtn {
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer; }
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: white; }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block; }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
-
 .main {
   display: flex; }
   .main .info {
@@ -172,7 +153,6 @@ input {
     padding: 6px 20px;
     border: 1px solid white;
     background-color: White;
-    cursor: default;
     left: 15px;
     top: 15px;
     background-color: #3b7bb4;
