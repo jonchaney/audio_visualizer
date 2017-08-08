@@ -1,66 +1,46 @@
-## Audio Visualizer
+# [Audio Visualizer][audio-visualizer]
 
-For this project I will create an audio visualizer using Javascript, CSS, the HTML Canvas element, and the Web Audio API. The audio visualizer will be separted into three different parts of the same song.
+[audio-visualizer]: https://jonchaney.github.io/audio_visualizer
 
-## Funtionality and MVP
+This project was inspired by my desire to create audio visualizations for my live music projects. I am very interested in ways in which web technoligies can be used to create interesting art and be used as tool for creative expression.
 
-With my audio visualizer, users will be able to:
+## Technologies
 
-- Press play to start the visualizations.
-- Basic sound bar visualization
-- Pulse visualization
-- Waveform visualization
+-  Web Audio API
+- Javascript
+- HTML/SCSS
+- Webpack
+- Canvas/Audio HTML5 elements
 
-In addition, this project will include:
+## Features
 
-- A production Readme
+The main feature of this project is to display different tracks of the same recordings. The first is a classic sound bar visualization of the guitar track:
 
-## Wireframes
+![sound-bar](docs/images/sound-bar.png)
 
-There will be a drop down menu describing the page and a link to the github.
+The second visualization is a waveform of a dry track of the vocals:
+
+![sound_bar](docs/images/waveform.png)
+
+The third visualization is a combination of the first two tracks with added effects, such as echo and reverb.
+
+![sound_bar](docs/images/circle.png)
+
+# Future Plans
+
+## Phase II:
+
+- Reimplement playback function to utilize the Web Audio API multi-tracking feature
+- Use a song with more tracks and allow the user to control the amount of reverb, echo, and eq for each track.
+- Create other visualizations for additional tracks.
+
+## Future, future, plans
+
+I plan to build on these simple ideas to create interactive art that can be used during live music performances, as well as art that can stand on its own. 
+
+Using The Web Audio API, Canvas, and Javascript I envision creating art that is both visually appealing and techinically interesting, with the ability to interact with it in a way that is similar to musical improvisation.
 
 
-![wireframes](docs/wireframes/js_project.jpg)
 
-## Architecture and Technologies
 
-For this project I plan to use:
 
-- Vanilla Javascript
-- Canvas HTML element
-- Web Audio API for extracting the data from the Audio file.
-- Webpack to bundle and set up the files
-
-The following scripts will be involved in this project:
-
-`audio.js`: this is where the data for the audio will be stored. I will create methods and allow manipulation of the audio stream.
-
-`pulse.js`: this is where a pulse type animation will be rendered
-
-`soundBar.js`: this is where the classic sound bar animation will be rendered
-
-`waveform.js`: this is where a wavefirm animation will be rendered
-
-## Implementation Time
-
-**Day 1**: set up file structure and test to make sure entry file is working.
-
-- Go over the Web Audio API and set up my audio.js file so I can create and Audio Object with a sound file saved as a instance variable.
-- Test that I can do some basic extraction of the audio data to render something to the page.
-- By the end of the day have the basic layout of my webpage done and have canvas elements rendered to the page. 
-
-**Day 2**: Get a basic sound bar visualizer rendered on the page
-
-- implement the sine and cosine sound wave methods in my audio.js file. 
-
-**Day 3**: Create a pulse audio visualization
-
-- implement a method in the audio.js file that analyzes the audio file and creates specifies output
-
-**Day 4**: Create two other rendered canvas objects based on the previous two methods. 
-
-- Use CSS to style something that shows my interest in design and creativity.
-
-## Bonus Features
-
-- [ ] Allow the user to upload a sound file to be visualized.
